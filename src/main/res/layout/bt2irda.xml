@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/dataServiceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bt2irda"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="16dp"
+                />
+
+        <EditText
+                android:id="@+id/etDataToSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Data to Send"
+                android:imeOptions="actionSend"
+                android:inputType="text">
+        </EditText>
+
+        <EditText
+                android:id="@+id/etReceivedData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Received Data"/>
+
+        <Button
+                android:id="@+id/play0Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 0"
+                />
+
+        <Button
+                android:id="@+id/play1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 1"
+                />
+
+        <Button
+                android:id="@+id/play2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 2"
+                />
+
+        <Button
+                android:id="@+id/play3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 3"
+                />
+
+        <Button
+                android:id="@+id/play4Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 4"
+                />
+
+        <Button
+                android:id="@+id/play5Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 5"
+                />
+
+        <Button
+                android:id="@+id/play6Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 6"
+                />
+
+        <Button
+                android:id="@+id/play7Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play 7"
+                />
+
+        <Button
+                android:id="@+id/record0Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 0"
+                />
+
+        <Button
+                android:id="@+id/record1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 1"
+                />
+
+        <Button
+                android:id="@+id/record2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 2"
+                />
+
+        <Button
+                android:id="@+id/record3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 3"
+                />
+
+        <Button
+                android:id="@+id/record4Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 4"
+                />
+
+        <Button
+                android:id="@+id/record5Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 5"
+                />
+
+        <Button
+                android:id="@+id/record6Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 6"
+                />
+
+        <Button
+                android:id="@+id/record7Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record 7"
+                />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,17 @@
+-dontshrink
+-keep class com.bluecreation.melodysmart.OtauRelease**
+-keepclassmembers class com.bluecreation.melodysmart.OtauRelease** {
+   *;
+}
+
+-keep class com.bluecreation.melodysmart.OtauTestRelease**
+-keepclassmembers class com.bluecreation.melodysmart.OtauTestRelease** {
+   *;
+}
+
+-keep class com.bluecreation.melodysmart.OtauListFile**
+-keepclassmembers class com.bluecreation.melodysmart.OtauListFile** {
+   *;
+}
+
+-keepattributes Signature, *Annotation*

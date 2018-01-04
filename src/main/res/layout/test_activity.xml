@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/dataServiceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MelodySmart data service"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/dataServiceLabel"
+        android:id="@+id/etDataToSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Data to Send"
+        android:imeOptions="actionSend"
+        android:inputType="text" >
+    </EditText>
+    <EditText
+        android:id="@+id/etReceivedData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDataToSend"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Received Data" />
+    <!-- Uncomment to enable the battery service in the ui
+
+    <TextView
+        android:id="@+id/batteryServiceLabel"
+        android:layout_below="@+id/etReceivedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery service"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/batteryView"
+        android:layout_below="@+id/batteryServiceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery : N/A"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        />
+
+    <Button
+        android:id="@+id/batteryButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/batteryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+        -->
+
+    <!-- Uncomment to enable the device info service in the ui
+    <TextView
+        android:id="@+id/deviceInfoLabel"
+        android:layout_below="@+id/batteryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device info"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+    />
+
+    <TextView
+        android:id="@+id/manufacturerNameView"
+        android:layout_below="@+id/deviceInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer name: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        />
+
+    <TextView
+        android:id="@+id/modelNumberView"
+        android:layout_below="@+id/manufacturerNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model number: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+    />
+
+
+    <TextView
+        android:id="@+id/serialNumberView"
+        android:layout_below="@+id/modelNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serial number: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/hwRevView"
+        android:layout_below="@+id/serialNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW rev: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/fwRevView"
+        android:layout_below="@+id/hwRevView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FW rev: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/swRevView"
+        android:layout_below="@+id/fwRevView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SW rev: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/sysIdView"
+        android:layout_below="@+id/swRevView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System id: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+    />
+
+    <TextView
+        android:id="@+id/pnpIdView"
+        android:layout_below="@+id/sysIdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PNP id: no info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        />
+    -->
+
+<TextView
+    android:id="@+id/remoteCommandsLabel"
+    android:layout_below="@+id/etReceivedData"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Remote commands"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    />
+
+<Button
+    android:id="@+id/remoteCommandsButton"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/remoteCommandsLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Remote commands"/>
+
+
+<TextView
+    android:id="@+id/i2cServiceLabel"
+    android:layout_below="@+id/remoteCommandsButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="I2C service"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    />
+
+<Button
+    android:id="@+id/i2cButton"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/i2cServiceLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start I2C"/>
+
+<TextView
+    android:id="@+id/otaServiceLabel"
+    android:layout_below="@+id/i2cButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="OTA upgrade"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    />
+
+<Button
+    android:id="@+id/otaButton"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/otaServiceLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Upgrade firmware"/>
+
+
+</RelativeLayout>
+
+</ScrollView>
